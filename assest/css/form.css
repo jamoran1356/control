@@ -1,0 +1,79 @@
+
+  .form {
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-top: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.input-container {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.condiciones{
+  display: block;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.submit{
+  margin: 0 auto;
+  padding: 0 auto;
+  display: block;
+  background-color: #32b19c;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 200px;
+  height: 35px;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+@media only screen and (max-width: 414px) {
+  .form {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .input-container,
+  .condiciones,
+  .submit {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}
+
